@@ -49,6 +49,29 @@ table {
 
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript">
+  window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
+  heap.load("2498670349");
+</script>
+<script>
+var elems = document.getElementsByTagName("details");
+function openAll() {
+  for (var i = 0; i <= 40; i++){
+    elems[i].setAttribute("open", "true");
+  }
+  document.getElementById("expand").setAttribute( "onClick", "javascript: closeAll();" );
+  document.getElementById("expand").innerHTML = "Collapse All -";
+}
+function closeAll() {
+  for (var i = 0; i <= 40; i++){
+    elems[i].removeAttribute("open");
+  }
+  document.getElementById("expand").setAttribute( "onClick", "javascript: openAll();" );
+  document.getElementById("expand").innerHTML = "Expand All +";
+}
+</script>
+
+
 </head>
 <body class="article">
 <div id="header">
@@ -67,6 +90,18 @@ table {
 <div class="paragraph">
 <p>IBM Deep Search is a commercial Software-as-a-Service system that uses state-of-the-art AI techniques to index and explore collections of scientific and technical documents. Indexed data sources can include proprietary, internal PDF documents and databases as well as publicly accessible PDF documents and databases. Unstructured and structured data sources may be indexed, including embedded images, charts and tables. IBM Deep Search indexes these data sources and builds a searchable, browseable base of interconnected concepts, entities, and relations, derived from the data sources. Now you can spend minutes, instead of days and weeks, discovering new relationships, ideas and hypotheses in the easily searchable base provided by IBM Deep Search.</p>
 </div>
+<table class="tableblock frame-none grid-none fit-content small">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="javascript:openAll();">+ Expand All</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="javascript:closeAll();">- Close All</a></p></td>
+</tr>
+</tbody>
+</table>
 <details>
 <summary class="title"><strong>Start Tutorial</strong></summary>
 <div class="content">
